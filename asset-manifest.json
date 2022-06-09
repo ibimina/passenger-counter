@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/passenger-counter/static/css/main.131a043d.css",
+    "main.js": "/passenger-counter/static/js/main.48020263.js",
+    "index.html": "/passenger-counter/index.html",
+    "main.131a043d.css.map": "/passenger-counter/static/css/main.131a043d.css.map",
+    "main.48020263.js.map": "/passenger-counter/static/js/main.48020263.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.131a043d.css",
+    "static/js/main.48020263.js"
+  ]
+}
