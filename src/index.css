@@ -1,13 +1,107 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  color: white;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper{
+  display: flex;
+/* justify-content: center; */
+align-items: center;
+flex-direction: column;
+height: 100vh;
+overflow-y: scroll;
+padding-inline:1rem ;
+  /* height: 500vh; */
+  /* max-height: 100%; */
+
+}
+header{
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
+.head{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+  align-items: center;
+
+}
+h2{
+  margin: 1rem;
+}
+.icon{
+grid-column: 4;
+padding: 1rem;
+
+}
+main{
+  text-align: center;
+  margin: 1rem 0rem;
+  width: 100%;
+}
+p.count{
+  font-weight: 800;
+  font-size: 5rem;
+  grid-column: 2;
+  margin-left: 3rem;
+}
+.btn-wrap{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* gap: 2rem; */
+}
+.btn{
+  /* padding: 2rem 2rem; */
+  border-radius: 50%;
+  border: 2px solid white;
+  color: white;
+}
+.clear{
+  padding: 1rem;
+}
+.sub{
+    padding: .7rem 1.5rem;
+  font-size: 2rem; 
+}
+.add{
+   padding: 2rem 2.5rem;
+  font-size: 3rem; 
+}
+.save{
+  margin: 1rem;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+}
+.display{
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin-top: 2rem;
+}
+@media (min-width: 45rem) {
+ header{
+   margin-top: 6rem;
+ }
+ p.count{
+   margin-bottom: 2rem;
+ }
+ .btn-wrap{
+   justify-content: space-around;
+   margin-top: 2rem;
+   gap: 5rem;
+ }
+ .save{
+   margin-top: 4rem;
+ }
+}
+@media (min-width: 60rem) {
+ header{
+   margin-top: 2rem;
+ }
 }

@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# 30days of React- day 07 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+After going through [30 days of React day 8](https://github.com/Asabeneh/30-Days-Of-React/blob/master/08_Day_States/08_states.md), I decidedd to build scrimba passenger counter app using react class components and states. This exercise challenges help you improve the use of class components, using props and this.state by building projects.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Proud of this](#proud-of-this)
+  - [Continued development](#continued-development)
+- [Author](#author)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The challenge
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Users should be able to:
 
-### `npm test`
+- View the optimal layout for the site depending on their device's screen size
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshot
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![mobile](Capture043.png)
+![Tablet](Capture044.png)
+![Desktop](Capture045.png)
+### Links
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Solution URL: (https://github.com/ibimina/passenger-counter)
+- Live Site URL: (https://ibimina.github.io/passenger-counter/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## My process
 
-### `npm run eject`
+### Built with
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Create react app
+-  created and export Header,Main,Button class component 
+- created functions in the app.js that increase and decrease the passenger count when the plus or minus button is clicked
+- created function that changes the passenger count to zero when the CE button is clicked
+- created a function that saves the passenger count when the save buton is clicked and displays the passenger count and the previous counts
+- imported reacticons 
+- Rendered App component
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Proud of this
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### How to import icons from react 
+- npm install react-icons
+- import { FaPalette(IconName) } from "react-icons/fa";
+- call it in the file needed
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```jsx
+<FaPalette/>
 
-## Learn More
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### This  function changes the background color of the page and buttons
+```jsx
+changeColor=()=>{
+  let r = Math.random()* 255;
+   let g = Math.random() * 255;
+    let b = Math.random() * 255;
+    let rgb = `rgb(${r},${g},${b})`
+    this.setState({ background: rgb})
+}
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Continued development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+React framework
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Author
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Ibimina Hart
+ - Frontend Mentor - [ibimina](https://www.frontendmentor.io/profile/ibimina)
+ - Linkedin - [ibimina hart](https://www.linkedin.com/in/ibimina-hart)
+- Twitter - [ibiminaaH](https://www.twitter.com/ibiminaaH)
